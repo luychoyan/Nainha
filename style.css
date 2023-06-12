@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+body {
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header {
+    width: 330px;
+    height: 100px;
+    background-color: aliceblue;
+
+}
+
+header > h1 {
+    text-align: center;
+}
+
+main {
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 330px;
+    height: 600px;
+    background-color: aqua;
+}
+
+input {
+    width: 70px;
+}
+
+#bloco-formulas {
+    width: 320px;
+    height: 300px;
+    color: aliceblue;
+    background-color: rgb(2, 2, 129);
+    text-align: center;
+
+}
+
+#resposta {
+    width: 320px;
+    height: 100px;
+    color: aliceblue;
+    background-color: rgb(87, 21, 21);
+    text-align: center;
+}
+
