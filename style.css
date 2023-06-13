@@ -61,7 +61,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 270px;
+    height: 300px;
     background-color: rgb(32, 32, 32);
     padding: 10px;
     margin: 10px;
