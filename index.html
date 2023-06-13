@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
     <title>Calculadoras</title>
 </head>
 <body>
@@ -20,12 +21,10 @@
                 <p>Formula:</p>
                 <p>% = (A - D) / A  x 100</p>
 
-                <label for="antes">Disponibilidade Antes de Entrar: </label>
-                <input type="number" name="" id="antes">
-
                 
-                <label for="depois">Disponibilidade Depois de Entrar: </label>
-                <input type="number" name="" id="depois">
+                <p>A: <input type="number" name="" id="antes"></p>
+                
+                <p>D: <input type="number" name="" id="depois"></p>
 
                 <input type="submit" value="Calcular" onclick="calcular()">
 
@@ -38,11 +37,9 @@
             resposta
         </div>
 
-
-
     </main>
 
-
+    
     
 </body>
 </html>

@@ -3,16 +3,23 @@
 
 function calcular() {
 
-    let antes1 = document.getElementById('antes')
-    let depois2 = document.getElementById('depois')
+    let Antes = document.querySelector('#antes').value
+    let Depois = document.querySelector('#depois').value
+    let resultado = document.querySelector('#resultado').value
 
-    let A = Number(antes1.value)
-    let D = Number(depois2.value)
 
-    if (A = 0) {
+    if (Antes.length <= 0) {
+
         alert ('Error')
+
     } else {
-        alert ('Tudo certo')
+
+        let A = Number(Antes)
+        let D = Number(Depois)
+        let resultado2 = ((A - D) / A) * 100
+
+        resultado.innerHTML = resultado2
+
     }
 
 }
