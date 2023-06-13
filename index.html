@@ -16,8 +16,8 @@
     <main>
         <div id="bloco-formulas">
 
-            <div id="consumo-diario">
-                <div id="informacao">
+            <div class="formula">
+                <div class="informacao">
                     <h2>Calculo da Utilização</h2>
                     <p>Formula:</p>
                     <p>% = (A - D) / A  x 100</p>
@@ -27,10 +27,38 @@
                 </div>
 
 
-                <div id="resposta">
-                   RESPOSTA
+                <div id="resposta1">
+                   RESPOSTA...
+                </div>
+            </div>
+
+            <div class="formula"">
+                <div class="informacao">
+                    <h2>Consumo Diario po UA:</h2>
+                    <p>Formula:</p>
+                    <p>(Peso do animal) x 0,03</p>
+                    <p>Peso do Animal: <input type="number" name="" id="peso2"></p>
+                    <input type="button" value="Calcular" onclick="calcular2()">
                 </div>
 
+                <div id="resposta2">
+                    RESPOSTA...
+                </div>
+            </div>
+
+            <div class="formula">
+                <div class="informacao">
+                    <h2>Consumo no periodo por UA</h2>
+                    <p>Formula:</p>
+                    <p>(Consumo Diario por UA) x (Período)</p>
+                    <p>Consumo Diario: <input type="number" name="" id="consumo"></p>
+                    <p>Periodo: <input type="number" name="" id="perido"></p>
+                    <input type="button" value="Calcular" onclick="calcular3()">
+                </div>
+
+                <div id="resposta3">
+                    Resposta
+                </div>
             </div>
 
         </div>

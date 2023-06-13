@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(41, 41, 41);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@ body {
 header {
     width: 330px;
     height: 100px;
-    background-color: aliceblue;
+    color: aliceblue;
 
 }
 
@@ -34,14 +34,13 @@ p {
 }
 
 main {
-    background-color: rgb(80, 80, 80);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 330px;
     height: 600px;
-    background-color: aqua;
+    
 }
 
 input {
@@ -52,20 +51,18 @@ input {
 
 #bloco-formulas {
     width: 320px;
-    height: 300px;
     color: aliceblue;
-    background-color: rgb(2, 2, 129);
     text-align: center;
 
 }
 
-#consumo-diario {
+.formula{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 200px;
 }
 
-#resposta {
-    font-size: 30px;
+#resposta, .resposta2, .resposta3, .resposta4, .resposta5 {
+    font-size: 20px;
 }
