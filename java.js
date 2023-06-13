@@ -136,3 +136,4 @@ function calcular6() {
         resultado6.innerHTML = resposta6 + ' Animais'
     }
 }
+
