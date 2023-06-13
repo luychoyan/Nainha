@@ -1,5 +1,5 @@
 * {
-    margin: 0px;
+    margin: 3px;
     padding: 0px;
     font-size: 1em;
 }
@@ -37,9 +37,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 330px;
-    height: 600px;
     
 }
 
@@ -52,15 +51,17 @@ input {
 #bloco-formulas {
     width: 320px;
     color: aliceblue;
-    text-align: center;
 
 }
 
-.formula{
+#formula{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 200px;
+    height: 270px;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
 }
 
 #resposta, .resposta2, .resposta3, .resposta4, .resposta5 {

@@ -16,7 +16,7 @@
     <main>
         <div id="bloco-formulas">
 
-            <div class="formula">
+            <div id="formula">
                 <div class="informacao">
                     <h2>Calculo da Utilização</h2>
                     <p>Formula:</p>
@@ -26,15 +26,14 @@
                     <input type="button" value="Calcular" onclick="calcular()">
                 </div>
 
-
                 <div id="resposta1">
                    RESPOSTA...
                 </div>
             </div>
 
-            <div class="formula"">
+            <div id="formula"">
                 <div class="informacao">
-                    <h2>Consumo Diario po UA:</h2>
+                    <h2>Consumo Diario por UA:</h2>
                     <p>Formula:</p>
                     <p>(Peso do animal) x 0,03</p>
                     <p>Peso do Animal: <input type="number" name="" id="peso2"></p>
@@ -46,19 +45,49 @@
                 </div>
             </div>
 
-            <div class="formula">
+            <div id="formula">
                 <div class="informacao">
                     <h2>Consumo no periodo por UA</h2>
                     <p>Formula:</p>
                     <p>(Consumo Diario por UA) x (Período)</p>
                     <p>Consumo Diario: <input type="number" name="" id="consumo"></p>
-                    <p>Periodo: <input type="number" name="" id="perido"></p>
+                    <p>Periodo: <input type="number" name="" id="periodo"></p>
                     <input type="button" value="Calcular" onclick="calcular3()">
                 </div>
 
                 <div id="resposta3">
-                    Resposta
+                    RESPOSTA...
                 </div>
+            </div>
+
+            <div id="formula">
+                <div class="informacao">
+                    <h2>Qunatidade de Forragem Disponivel</h2>
+                    <p>Formula: </p>
+                    <p>? Kg/ha x 0,6</p>
+                    <p>Quantidade de Forragem: <input type="number" name="" id="forragem"></p>
+                    <input type="button" value="Calcular" onclick="calcular4()">
+                </div>
+
+                <div id="resposta4">
+                    RESPOSTA...
+                </div>
+            </div>
+
+            <div id="formula">
+                <div class="informacao">
+                    <h2>Capacidade de Suporte</h2>
+                    <p>Formula:</p>
+                    <p>(Consumo no periodo por UA) / (Quantidade de forragem disponivel)</p>
+                    <p>Consumo no Periodo por UA: <input type="number" name="" id="consumo_periodo"></p>
+                    <p>Quantidade de forragem disponivel: <input type="number" name="" id="forragem_disponivel"></p>
+                    <input type="button" value="Calcular" onclick="calcular5()">
+                </div>
+
+                <div id="resposta5">
+                    RESPOSTA...
+                </div>
+
             </div>
 
         </div>

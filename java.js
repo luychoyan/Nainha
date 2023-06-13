@@ -26,7 +26,7 @@ function calcular() {
 
 }
 
-function calcular2() {  //Segunda formula
+function calcular2() {  //Consumo diario por UA
 
     let peso = document.getElementById('peso2')
     let resposta = document.getElementById('resposta2')
@@ -41,7 +41,7 @@ function calcular2() {  //Segunda formula
 
         let resultado2 = peso_real * 0.03
 
-        resposta.innerHTML = resultado2 + 'Kg'
+        resposta.innerHTML = resultado2 + ' Kg'
     }
 
 
@@ -49,7 +49,7 @@ function calcular2() {  //Segunda formula
 }
 
 
-function calcular3() {
+function calcular3() { //Consumo no periodo por UA
 
     let consumodiario = document.getElementById('consumo')
     let periodo = document.getElementById('periodo')
@@ -62,20 +62,55 @@ function calcular3() {
     } else {
 
         let consumo = Number(consumodiario.value)
-        let periodo = Number(periodo.value)
+        let periodo_valor = Number(periodo.value)
 
-        let resultado3 = consumo * periodo
+        let resultado3 = consumo * periodo_valor
 
-        resposta3.innerHTML = resultado3 + 'Kg/ha'
+        resposta3.innerHTML = resultado3 + ' Kg/ha'
 
     }
 }
 
 
+function calcular4() { //Quantidade de forragem disponivel
 
-/*let A = 100
-let D = 59
+    let forragem = document.getElementById('forragem')
+    let resposta4 = document.getElementById('resposta4')
 
-let resultado = ((A - D) / A) * 100
+    if (forragem.value.length <= 0) {
 
-console.log(resultado + '%')*/
+        alert ('Valor Inválido, Preencha todos os Campos!')
+
+    } else {
+
+        let resultado4 = Number(forragem.value)
+
+        let final = resultado4 * 0.6
+
+        resposta4.innerHTML = final + ' Kg/ha'
+
+    }
+
+}
+
+
+function calcular5() {
+
+    let consumo_periodo = document.getElementById('consumo_periodo')
+    let forragem_disponivel = document.getElementById('forragem_disponivel')
+    let resposta5 = document.getElementById('resposta5')
+
+    if (consumo_periodo.value.length <= 0 || forragem_disponivel.value.length <= 0) {
+
+        alert ('Valor Inválido, Preencha todos os Campos!')
+
+    } else {
+
+        let consumo5 = Number(consumo_periodo.value)
+        let forragem5 = Number(forragem_disponivel.value)
+
+        let resultado5 = consumo5 / forragem5
+
+        resposta5.innerHTML = resultado5 + ' ha/UA'
+    }
+}
