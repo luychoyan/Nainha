@@ -11,7 +11,7 @@ function calcular() {
 
     if (antes.value.length <= 0 || depois.value.length == 0) {
 
-        alert ('Valor Inválido, Preencha todos os Campos!')
+        alert ('Valor Inválido, Preencha os campos corretamente!')
 
     } else {
 
@@ -33,7 +33,7 @@ function calcular2() {  //Consumo diario por UA
 
     if (peso.value.length <= 0) {
 
-        alert ('Valor Inválido, Preencha todos os Campos!')
+        alert ('Valor Inválido, Preencha os campos corretamente!')
 
     } else {
 
@@ -57,7 +57,7 @@ function calcular3() { //Consumo no periodo por UA
 
     if (consumodiario.value.length <= 0 || periodo.value.length <= 0) {
 
-        alert ('Valor Inválido, Preencha todos os Campos!')
+        alert ('Valor Inválido, Preencha os campos corretamente!')
 
     } else {
 
@@ -79,7 +79,7 @@ function calcular4() { //Quantidade de forragem disponivel
 
     if (forragem.value.length <= 0) {
 
-        alert ('Valor Inválido, Preencha todos os Campos!')
+        alert ('Valor Inválido, Preencha os campos corretamente!')
 
     } else {
 
@@ -102,7 +102,7 @@ function calcular5() {
 
     if (consumo_periodo.value.length <= 0 || forragem_disponivel.value.length <= 0) {
 
-        alert ('Valor Inválido, Preencha todos os Campos!')
+        alert ('Valor Inválido, Preencha os campos corretamente!')
 
     } else {
 
@@ -112,5 +112,27 @@ function calcular5() {
         let resultado5 = consumo5 / forragem5
 
         resposta5.innerHTML = resultado5 + ' ha/UA'
+    }
+}
+
+
+function calcular6() {
+
+    let tamanhopastagem = document.getElementById('tamanho_pastagem')
+    let capacidadedesuporte = document.getElementById('capacidade_de_suporte')
+    let resultado6 = document.getElementById('resposta6')
+
+    if (tamanhopastagem.value.length <= 0 || capacidadedesuporte.value.length <= 0) {
+
+        alert ('Valor Inválido, Preencha os campos corretamente!')
+
+    } else {
+
+        let pastagem6 = Number(tamanhopastagem.value)
+        let capacidade6 = Number(capacidadedesuporte.value)
+
+        let resposta6 = pastagem6 / capacidade6
+
+        resultado6.innerHTML = resposta6 + ' Animais'
     }
 }
