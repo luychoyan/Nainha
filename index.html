@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="java.js"></script>
+    
     <title>Calculadoras</title>
 </head>
-<body>
+<body onload="carregar()">
 
     <header>
         <h1>Calculadoras</h1>
@@ -17,29 +17,28 @@
         <div id="bloco-formulas">
 
             <div id="consumo-diario">
-                <h2>Calculo da Utilização</h2>
-                <p>Formula:</p>
-                <p>% = (A - D) / A  x 100</p>
+                <div id="informacao">
+                    <h2>Calculo da Utilização</h2>
+                    <p>Formula:</p>
+                    <p>% = (A - D) / A  x 100</p>
+                    <p>A: <input type="number" name="" id="antes1"></p>
+                    <p>D: <input type="number" name="" id="depois2"></p>
+                    <input type="button" value="Calcular" onclick="calcular()">
+                </div>
 
-                
-                <p>A: <input type="number" name="" id="antes"></p>
-                
-                <p>D: <input type="number" name="" id="depois"></p>
 
-                <input type="submit" value="Calcular" onclick="calcular()">
+                <div id="resposta">
+                   RESPOSTA
+                </div>
 
             </div>
 
         </div>
-
-
-        <div id="resposta">
-            resposta
-        </div>
+        
 
     </main>
 
-    
+    <script src="java.js"></script>
     
 </body>
 </html>

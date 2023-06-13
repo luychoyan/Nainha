@@ -21,6 +21,8 @@ header {
 
 header > h1 {
     text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
 }
 
 main {
@@ -47,11 +49,10 @@ input {
 
 }
 
-#resposta {
-    width: 320px;
-    height: 100px;
-    color: aliceblue;
-    background-color: rgb(87, 21, 21);
-    text-align: center;
+#consumo-diario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
 }
 

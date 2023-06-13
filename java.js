@@ -1,24 +1,26 @@
 
 
-
 function calcular() {
 
-    let Antes = document.querySelector('#antes').value
-    let Depois = document.querySelector('#depois').value
-    let resultado = document.querySelector('#resultado').value
+    let antes = document.getElementById('antes1')
+    let depois = document.getElementById('depois2')
+    let resultado = document.getElementById('resposta')
+
+    
 
 
-    if (Antes.length <= 0) {
+    if (antes.value.length <= 0 || depois.value.length == 0) {
 
-        alert ('Error')
+        alert ('Valor Inválido, Preencha todos os Campos!')
 
     } else {
 
-        let A = Number(Antes)
-        let D = Number(Depois)
+        let A = Number(antes.value)
+        let D = Number(depois.value)
+
         let resultado2 = ((A - D) / A) * 100
 
-        resultado.innerHTML = resultado2
+        resultado.innerHTML = resultado2 + '%'
 
     }
 
